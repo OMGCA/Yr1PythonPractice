@@ -43,7 +43,7 @@ def arrayMerge(arrA,arrB):
     return newArr
 
 def rotateArr(arr):
-    mode = input(" ")
+    mode = input("Select rotate mode: 1-Rotate 2-Horizontal 3-Vertical ")
     if int(mode) == 1:
         arr[0][0],arr[1][0] = arr[1][0],arr[0][0]
         arr[1][0],arr[0][1] = arr[0][1],arr[1][0]
@@ -55,5 +55,8 @@ def rotateArr(arr):
         arr[0][1],arr[1][1] = arr[1][1],arr[0][1]
     
     return arr
-        
+
+print(binaryToDecimal([1,0,1,0,1,1]))
+arrDisplay(arrayMerge([0,2,4,6,8],[1,3,5,7,9]))
 print(rotateArr([[7,4],[3,2]]))
+insertAvg()
