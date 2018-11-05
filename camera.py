@@ -2,12 +2,7 @@ import sys
 import os
 import shutil
 import cv2
-import time
 from PyQt4.QtGui import *
-
-global stopbuttonValue
-stopbuttonValue = True
-
 
 class Example(QWidget):
     def __init__(self):
@@ -61,9 +56,7 @@ class Example(QWidget):
 
     def stopRecording(self):
         source = self.sender()
-        stopbuttonValue = False
-        sys.exit()
-            
+        sys.exit()       
         
 if __name__ == '__main__':
     app = QApplication(sys.argv)
